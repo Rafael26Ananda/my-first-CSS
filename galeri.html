@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Dengan menggunakan CSS Grid</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+         }
+
+         h1{
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 30px;
+         }
+
+        hr{
+            margin-bottom: 40px;
+        }
+
+        body{
+            background-color: royalblue;
+            padding-bottom: 100px;
+        }
+
+        img{
+            display: block;
+            width: 100%;
+        }
+        
+        .galeri{
+            width: 80%;
+            margin: auto;
+            border: 10px solid hotpink;
+            list-style: none;
+            box-shadow: 5px 5px 5px rgba(255,255,255, 0.8);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Galeri Simpel Menggunakan CSS Grid</h1>
+    <hr>
+    <ul class="galeri">
+        <li><img src="gambar1/proyek1.png" alt=""></li>
+        <li><img src="gambar1/proyek2.png" alt=""></li>
+        <li><img src="gambar1/proyek3.png" alt=""></li>
+        <li><img src="gambar1/proyek4.png" alt=""></li>
+        <li><img src="gambar1/proyek5.png" alt=""></li>
+        <li><img src="gambar1/proyek6.png" alt=""></li>
+    </ul>
+</body>
+</html>
